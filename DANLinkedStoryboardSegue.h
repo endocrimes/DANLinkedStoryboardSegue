@@ -2,7 +2,7 @@
 //  DANLinkedStoryboardSegue.h
 //  Captain
 //
-//  Created by  Danielle Lancashireon 18/03/2014.
+//  Created by Danielle Lancashire on 18/03/2014.
 //  Copyright (c) 2014 RocketApps Ltd. All rights reserved.
 //
 

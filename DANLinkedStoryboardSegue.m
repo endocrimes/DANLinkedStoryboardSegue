@@ -2,7 +2,7 @@
 //  DANLinkedStoryboardSegue.m
 //  Captain
 //
-//  Created by  Danielle Lancashireon 18/03/2014.
+//  Created by Danielle Lancashire on 18/03/2014.
 //  Copyright (c) 2014 RocketApps Ltd. All rights reserved.
 //
 
@@ -13,18 +13,18 @@
 + (UIViewController *)sceneNamed:(NSString *)identifier {
   NSArray *info = [identifier componentsSeparatedByString:@"@"];
 
-  NSString *storyboard_name = info[1];
-  NSString *scene_name = info[0];
+  NSString *storyboardName = info[1];
+  NSString *sceneName = info[0];
 
-  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboard_name
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
                                                        bundle:nil];
   UIViewController *scene = nil;
 
-  if (scene_name.length == 0) {
+  if (sceneName.length == 0) {
     scene = [storyboard instantiateInitialViewController];
   }
   else {
-    scene = [storyboard instantiateViewControllerWithIdentifier:scene_name];
+    scene = [storyboard instantiateViewControllerWithIdentifier:sceneName];
   }
 
   return scene;
